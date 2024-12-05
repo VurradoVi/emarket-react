@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+    h1 {
+        font-family: "Montserrat Underline", sans-serif;
+        color: #091D9E;
+        font-weight: 500;
+    }
+
+    input {
+        width: 745px;
+        height: 40px;
+        background-color: #DEDEDE;
+        border-radius: 8px;
+        padding: 13px;
+        padding-left: 35px;
+        border: 0;
+        outline: none;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 30px;
+        }
+    }
+    img {
+        width: 20px;
+        height: 22px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.searchInput {
+    position: relative;
+    img {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%)
+    }
+}
