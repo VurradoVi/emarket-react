@@ -1,0 +1,38 @@
+.baner {
+  margin-top: 40px;
+
+  img {
+    width: 100%;  
+    object-fit: cover;
+  }
+
+  //   position: relative;
+}
+
+// .btn {
+//   width: 52px;
+//   height: 52px;
+//   position: absolute;
+//   top: 50%;
+//   left: 8px;
+//   transform: translateY(-50%);
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+//   &:hover {
+//     transform: translateX(-3px) translateY(-50%);
+//   }
+// }
+
+// .btnRight {
+//   width: 52px;
+//   height: 52px;
+//   position: absolute;
+//   top: 50%;
+//   right: 0;
+//   transform: scaleX(-1) translateY(-50%);
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+//   &:hover {
+//     transform: scaleX(-1) translateX(-3px) translateY(-50%);
+//   }
+// }

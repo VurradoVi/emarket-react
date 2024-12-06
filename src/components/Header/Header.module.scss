@@ -11,27 +11,38 @@
         font-family: "Montserrat Underline", sans-serif;
         color: #091D9E;
         font-weight: 500;
+        cursor: pointer;
+        &:hover {
+            color: #364bd6;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
     }
 
     input {
-        width: 745px;
+        width: 100%;
+        max-width: 745px;
         height: 40px;
         background-color: #DEDEDE;
         border-radius: 8px;
-        padding: 13px;
-        padding-left: 35px;
+        padding: 13px 13px 13px 35px;
         border: 0;
         outline: none;
     }
 
     ul {
         display: flex;
-
         li {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-right: 30px;
+            cursor: pointer;
+            transition: transform 0.1s ease-in-out;
+            &:hover {
+                transform: translateY(-2px);
+            }
         }
     }
     img {
@@ -45,6 +56,9 @@
 }
 
 .searchInput {
+    max-width: 750px;
+    width: 100%;
+    margin: 0 20px;
     position: relative;
     img {
         width: 16px;

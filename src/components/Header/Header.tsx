@@ -1,4 +1,4 @@
-import styles from './Header.module.scss'
+import styles from "./Header.module.scss";
 
 export default function Header() {
   return (
@@ -6,22 +6,22 @@ export default function Header() {
       <h1>Emarket</h1>
       <div className={styles.searchInput}>
         <img src="../search.svg" alt="search" />
-      <input type="text" placeholder='Поиск'  />
+        <input type="text" placeholder="Поиск" />
       </div>
       <ul>
         <li>
-            <img src="../catalog.svg" alt="Каталог" />
-            <p>Каталог</p>
+          <img src="../catalog.svg" alt="Каталог" />
+          <p>Каталог</p>
         </li>
         <li>
-            <img src="../basket.svg" alt="Корзина" />
-            <p>Корзина</p>
+          <img src="../basket.svg" alt="Корзина" />
+          <p>Корзина</p>
         </li>
         <li>
-            <img src="../profile.svg" alt="Профиль" />
-            <p>Профиль</p>
+          <img src="../profile.svg" alt="Профиль" />
+          <p>Профиль</p>
         </li>
       </ul>
     </div>
-  )
+  );
 }
