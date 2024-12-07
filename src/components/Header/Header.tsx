@@ -22,6 +22,8 @@ export default function Header() {
           <p>Профиль</p>
         </li>
       </ul>
+      <div className={styles.headerLine}></div>
     </div>
+    
   );
 }
