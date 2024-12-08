@@ -6,6 +6,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 
     h1 {
         font-family: "Montserrat Underline", sans-serif;
@@ -33,11 +35,11 @@
 
     ul {
         display: flex;
+        gap: 25px;
         li {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-right: 30px;
             cursor: pointer;
             transition: transform 0.1s ease-in-out;
             &:hover {

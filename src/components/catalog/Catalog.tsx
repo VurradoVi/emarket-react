@@ -1,5 +1,5 @@
 import { ICards } from "../../types/catalogCard";
-import CatalogCard from "../card/CatalogCard";
+import CatalogCard from "../CatalogCard/CatalogCard";
 import styles from "./Catalog.module.scss";
 
 export default function Catalog() {
@@ -43,6 +43,7 @@ export default function Catalog() {
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
+          flexWrap: 'wrap'
         }}
       >
         {catalogCard.map((item) => (
