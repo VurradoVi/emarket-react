@@ -1,7 +1,7 @@
 .stockCard {
     position: relative;
     margin-top: 25px;
-    width: 220px;
+    width: 210px;
     height: 431px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
         position: absolute;
         right: 5px;
         border-radius: 8px;
-        padding: 13px;
+        padding: 12px 8px;
         background-color: #EBBA1A;
         font-size: 17px;
         font-weight: 500;
@@ -21,8 +21,8 @@
     .about {
         max-width: 190px;
         text-align: center;
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 18px;
+        font-weight: 500;
     }
 
     .price {
@@ -55,6 +55,7 @@
         padding: 15px 50px;
         border-radius: 8px;
         background-color: #091D9E;
+        border: none;
         color: #F6F6F6;
         font-size: 15px;
         font-weight: 500;

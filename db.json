@@ -1,0 +1,46 @@
+{
+  "stock": [
+    {
+        "id": 1,
+        "stock": 4,
+        "img": "/img/phone1.jpg",
+        "title": "Смартфон Apple iPhone 14 128GB",
+        "price": 87999
+      },
+      {
+        "id": 2,
+        "stock": 10,
+        "img": "/img/phone2.jpg",
+        "title": "Смартфон Apple iPhone 12 64GB",
+        "price": 47756
+      },
+      {
+        "id": 3,
+        "stock": 15,
+        "img": "/img/phone3.jpg",
+        "title": "Смартфон HUAWEI nova Y61",
+        "price": 14117
+      },
+      {
+        "id": 4,
+        "stock": 4,
+        "img": "/img/phone4.jpg",
+        "title": "Смартфон Xiaomi Redmi  128GB",
+        "price": 19999 
+      },
+      {
+        "id": 5,
+        "stock": 5,
+        "img": "/img/phone5.jpg",
+        "title": "Смартфон Apple iPhone 14 128GB",
+        "price": 79999
+      },
+      {
+        "id": 6,
+        "stock": 11,
+        "img": "/img/phone2.jpg",
+        "title": "Смартфон Apple iPhone 13 128GB",
+        "price": 77999
+      }
+  ]
+}
