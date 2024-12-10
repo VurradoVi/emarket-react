@@ -1,18 +1,10 @@
-import Advertising from "./components/Ad/Advertising";
-import Catalog from "./components/Catalog/Catalog";
-import Container from "./components/Container/Container";
-import Header from "./components/Header/Header";
-import Stock from "./components/Stock/Stock";
+import Main from "./components/Main/Main";
+
 
 function App() {
   return (
     <>
-      <Container>
-        <Header />
-        <Advertising />
-        <Catalog />
-        <Stock />
-      </Container>
+      <Main />
     </>
   );
 }

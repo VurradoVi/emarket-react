@@ -1,24 +1,13 @@
-import { useEffect, useState } from "react";
+import { IStock } from "../../types/stock";
 import StockCard from "../StockCard/StockCard";
 import styles from "./Stock.module.scss";
-import axios from "axios";
-import { IStock } from "../../types/stock";
 
-export default function Stock() {
-  const [stockItem, setStockItem] = useState<IStock[]>([]);
+interface StockProps {
+  stockItem: IStock[];
+}
 
-  useEffect(() => {
-    const FetchData = async () => {
-      try {
-        const stockData = await axios.get("http://localhost:3000/stock");
-        setStockItem(stockData.data);
-      } catch (error) {
-        alert('Ошибка с БД (Stock)')
-        console.log("Ошибка с бд stock", error)
-      }
-    };
-    FetchData();
-  }, []);
+export default function Stock({stockItem}:StockProps) {
+  
   return (
     <div className={styles.stock}>
       <h2>Акции</h2>
