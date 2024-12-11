@@ -11,9 +11,9 @@ export default function StockCard({stockItem}: StockCardProps) {
     const [isClicked, setIsClicked] = useState(false)
   return (
     <div className={styles.stockCard}>
-      <img src={stockItem.img} alt="Phone" />
+      <img className={styles.stockImg} src={stockItem.img} alt="Phone" />
       <div className={styles.stock}>- {stockItem.stock} %</div>
-      <h3 className={styles.about}>{stockItem.title}</h3>
+      <h3 className={styles.about}>{stockItem.name}</h3>
       <div className={styles.price}>
         <h1>{stockItem.price - Math.round((stockItem.price*(stockItem.stock / 100)))} ₽</h1>
         <p style={{textDecoration: 'line-through', opacity: '0.5'}}>{stockItem.price} ₽</p>

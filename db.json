@@ -1,46 +1,185 @@
 {
   "stock": [
     {
-        "id": 1,
-        "stock": 4,
-        "img": "/img/phone1.jpg",
-        "title": "Смартфон Apple iPhone 14 128GB",
-        "price": 87999
-      },
-      {
-        "id": 2,
-        "stock": 10,
-        "img": "/img/phone2.jpg",
-        "title": "Смартфон Apple iPhone 12 64GB",
-        "price": 47756
-      },
-      {
-        "id": 3,
-        "stock": 15,
-        "img": "/img/phone3.jpg",
-        "title": "Смартфон HUAWEI nova Y61",
-        "price": 14117
-      },
-      {
-        "id": 4,
-        "stock": 4,
-        "img": "/img/phone4.jpg",
-        "title": "Смартфон Xiaomi Redmi  128GB",
-        "price": 19999 
-      },
-      {
-        "id": 5,
-        "stock": 5,
-        "img": "/img/phone5.jpg",
-        "title": "Смартфон Apple iPhone 14 128GB",
-        "price": 79999
-      },
-      {
-        "id": 6,
-        "stock": 11,
-        "img": "/img/phone2.jpg",
-        "title": "Смартфон Apple iPhone 13 128GB",
-        "price": 77999
-      }
+      "id": 1,
+      "stock": 4,
+      "img": "/img/phone1.jpg",
+      "name": "Смартфон Apple iPhone 14 128GB",
+      "price": 87999,
+      "category": "Смартфоны"
+    },
+    {
+      "id": 2,
+      "stock": 10,
+      "img": "/img/phone2.jpg",
+      "name": "Смартфон Apple iPhone 12 64GB",
+      "price": 47756,
+      "category": "Смартфоны"
+    },
+    {
+      "id": 3,
+      "stock": 15,
+      "img": "/img/phone3.jpg",
+      "name": "Смартфон HUAWEI nova Y61",
+      "price": 14117,
+      "category": "Смартфоны"
+    },
+    {
+      "id": 4,
+      "stock": 4,
+      "img": "/img/phone4.jpg",
+      "name": "Смартфон Xiaomi Redmi  128GB",
+      "price": 19999,
+      "category": "Смартфоны"
+    },
+    {
+      "id": 5,
+      "stock": 5,
+      "img": "/img/phone5.jpg",
+      "name": "Смартфон Apple iPhone 14 128GB",
+      "price": 79999,
+      "category": "Смартфоны"
+    },
+    {
+      "id": 6,
+      "stock": 11,
+      "img": "/img/phone2.jpg",
+      "name": "Смартфон Apple iPhone 13 128GB",
+      "price": 77999,
+      "category": "Смартфоны"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Смартфон Galaxy S23",
+      "category": "Смартфоны",
+      "description": "Высокопроизводительный смартфон с AMOLED экраном и 128 ГБ памяти.",
+      "price": 899.99,
+      "stock_quantity": 15,
+      "image_url": "http://example.com/galaxy-s23.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ноутбук MacBook Pro 16\"",
+      "category": "Ноутбуки",
+      "description": "Мощный ноутбук с процессором M1, 16 ГБ RAM и 512 ГБ SSD.",
+      "price": 2199.99,
+      "image_url": "http://example.com/macbook-pro.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Компьютер игровой Alienware Aurora",
+      "category": "Компьютеры",
+      "description": "Игровой компьютер с процессором Intel i9 и 32 ГБ RAM.",
+      "price": 1799.99,
+      "stock_quantity": 10,
+      "image_url": "http://example.com/alienware-aurora.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Телевизор LG OLED 65\"",
+      "category": "Телевизоры",
+      "description": "65-дюймовый 4K OLED телевизор с поддержкой HDR.",
+      "price": 1299.99,
+      "stock_quantity": 12,
+      "image_url": "http://example.com/lg-oled.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Планшет iPad Pro 11\"",
+      "category": "Планшеты",
+      "description": "Планшет с M1 процессором, 256 ГБ памяти и поддержкой 5G.",
+      "price": 1099.99,
+      "image_url": "http://example.com/ipad-pro.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Колонка Sonos One",
+      "category": "Колонки",
+      "description": "Умная беспроводная колонка с поддержкой AirPlay и голосовых помощников.",
+      "price": 199.99,
+      "stock_quantity": 30,
+      "image_url": "http://example.com/sonos-one.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Смартфон iPhone 14 Pro",
+      "category": "Смартфоны",
+      "description": "Смартфон с 6,1-дюймовым Super Retina XDR дисплеем и 256 ГБ памяти.",
+      "price": 999.99,
+      "image_url": "http://example.com/iphone-14-pro.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Ноутбук ASUS ZenBook Flip 14\"",
+      "category": "Ноутбуки",
+      "description": "Универсальный ноутбук 2-в-1 с Intel i5, 8 ГБ RAM и 256 ГБ SSD.",
+      "price": 799.99,
+      "stock_quantity": 18,
+      "image_url": "http://example.com/asus-zenbook-flip.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Компьютер HP Envy Desktop",
+      "category": "Компьютеры",
+      "description": "Многофункциональный ПК с процессором AMD Ryzen 7 и 16 ГБ RAM.",
+      "price": 1299.99,
+      "stock_quantity": 10,
+      "image_url": "http://example.com/hp-envy-desktop.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Телевизор Sony Bravia 55\"",
+      "category": "Телевизоры",
+      "description": "55-дюймовый 4K HDR телевизор с поддержкой Dolby Vision.",
+      "price": 899.99,
+      "stock_quantity": 15,
+      "image_url": "http://example.com/sony-bravia.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Планшет Microsoft Surface Pro 7",
+      "category": "Планшеты",
+      "description": "Планшет с Intel Core i5, 8 ГБ RAM и 256 ГБ SSD.",
+      "price": 899.99,
+      "stock_quantity": 22,
+      "image_url": "http://example.com/surface-pro-7.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Колонка JBL Flip 5",
+      "category": "Колонки",
+      "description": "Портативная Bluetooth-колонка с мощным звуком и водонепроницаемым корпусом.",
+      "price": 129.99,
+      "image_url": "http://example.com/jbl-flip-5.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Смартфон Google Pixel 7",
+      "category": "Смартфоны",
+      "description": "Флагманский смартфон с 128 ГБ памяти и 6.3-дюймовым OLED экраном.",
+      "price": 699.99,
+      "stock_quantity": 30,
+      "image_url": "http://example.com/google-pixel-7.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Ноутбук Dell XPS 15",
+      "category": "Ноутбуки",
+      "description": "Ноутбук с процессором Intel i7, 16 ГБ RAM и 512 ГБ SSD.",
+      "price": 1799.99,
+      "stock_quantity": 10,
+      "image_url": "http://example.com/dell-xps-15.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Компьютер iMac 24\"",
+      "category": "Компьютеры",
+      "description": "Компьютер All-in-One с процессором M1 и 8 ГБ RAM.",
+      "price": 1299.99,
+      "stock_quantity": 8,
+      "image_url": "http://example.com/imac-24.jpg"
+    }
   ]
 }

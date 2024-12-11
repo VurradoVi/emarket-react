@@ -1,22 +1,21 @@
 import { ChangeEvent, useState } from "react";
 import styles from "./Header.module.scss";
+import { IProduct } from "../../types/productsData";
 import { IStock } from "../../types/stock";
 
-interface StockProps {
-  stockItem: IStock[];
+interface ProductProps {
+  combinedItems: (IStock | IProduct)[];
+  setIsOpened: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default function Header({ stockItem }: StockProps) {
+export default function Header({ combinedItems, setIsOpened }: ProductProps) {
   const [value, setValue] = useState("");
-  const reset = () => {
-    setValue("");
-  };
 
   const searchValue = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
   };
-  const filteredItem = stockItem.filter((item) =>
-    item.title.toLowerCase().includes(value.toLowerCase())
+  const filteredItem = combinedItems.filter((item) =>
+    item.name.toLowerCase().includes(value.toLowerCase())
   );
   return (
     <div className={styles.header}>
@@ -34,7 +33,7 @@ export default function Header({ stockItem }: StockProps) {
             {filteredItem.length > 0 ? (
               filteredItem.map((item) => (
                 <div className={styles.resultItem} key={item.id}>
-                  {item.title}
+                  {item.name}
                 </div>
               ))
             ) : (
@@ -43,7 +42,7 @@ export default function Header({ stockItem }: StockProps) {
           </div>
         )}
         <div
-          onClick={reset}
+          onClick={() => setValue("")}
           className={`${styles.delete} ${value ? styles.deleteVisibility : ""}`}
         >
           x
@@ -54,7 +53,7 @@ export default function Header({ stockItem }: StockProps) {
           <img src="../catalog.svg" alt="Каталог" />
           <p>Каталог</p>
         </li>
-        <li>
+        <li onClick={() => setIsOpened(true)}>
           <img src="../basket.svg" alt="Корзина" />
           <p>Корзина</p>
         </li>
